@@ -17,16 +17,14 @@ html {
 
 body {
     font-size: 1.6rem;
-
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 #navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem;
-    border-bottom: 0.2rem solid #000;
-
+    padding: 0.5rem;
 
 }
 
@@ -35,8 +33,7 @@ body {
     align-items: center;
     justify-content: center;
     flex-grow: 1;
-    /* border-style: dashed; */
-
+    margin-left: 15rem;
 
 }
 
@@ -46,12 +43,13 @@ ul li {
 
 ul a {
     text-decoration: none;
-    margin: 0 4rem;
+    margin: 0 5rem 0 0;
     font-size: 1.8rem;
-    font-weight: 600;
-    color: #312b2b;
-    letter-spacing: 0.1rem;
-    ;
+    font-weight: 500;
+    color: #050505;
+    letter-spacing: 0.3rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
 
 }
 
@@ -77,24 +75,26 @@ ul a {
 
 .lorem {
     position: absolute;
-    left: 6rem;
-    top: 20rem;
-    height: 40vh;
-    width: 60%;
-    background-color: rgba(231, 32, 32, 0.4);
+    left: 7rem;
+    top: 21rem;
+    height: 35vh;
+    width: 44.5%;
+    background-color: rgba(249, 100, 100, 0.5);
     max-width: 60rem;
-    color: #fff;
-
+    color: #ffffff;
 }
 
 .lorem h1 {
-    padding: 4rem 2rem 1rem 4rem;
-    font-size: 5rem;
+    padding: 2rem 2rem 1rem 4rem;
+    font-size: 4.5rem;
 }
 
 .lorem p {
     padding-left: 4rem;
-    max-width: 50rem;
+    max-width: 47rem;
+    letter-spacing: 0.05rem;
+    line-height: 2.2rem;
+    color:#f4f1f1
 }
 
 
@@ -159,12 +159,13 @@ ul a {
     margin: 0 auto;
     letter-spacing: 0.1rem;
     font-size: 2rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 
 }
 
 .item p {
     padding-top: 1rem;
-    padding-bottom:3rem;
+    padding-bottom: 3rem;
     max-width: 23rem;
     margin: 0 auto;
 }
@@ -184,10 +185,10 @@ ul a {
 #order button {
     padding: 1.5rem 6rem 1.5rem 6rem;
     border-radius: 3rem;
-    background: rgb(215, 200, 200);
+    background: rgba(245, 177, 242, 0.882);
     border-width: 0;
     font-weight: 600;
-    font-size:2rem;
+    font-size: 2rem;
     margin-bottom: 12rem;
 }
 
@@ -196,9 +197,9 @@ ul a {
 
 @media only screen and (max-width: 768px) {
 
-   
- 
-  
+
+
+
 
     ul a {
         margin: 1rem 1.5rem;
@@ -206,7 +207,7 @@ ul a {
     }
 
     .lorem {
-        top:10rem;
+        top: 10rem;
         left: 1rem;
         width: 60%;
         height: 30vh;
@@ -214,10 +215,10 @@ ul a {
 
 
 
-    .item{
-        padding-bottom:1rem;
+    .item {
+        padding-bottom: 1rem;
     }
-   
+
 
 }
 
@@ -233,25 +234,25 @@ ul a {
 
 
 @media only screen and (max-width: 570px) {
-    
-   
 
-    #navbar{
-        padding:4rem 0rem 0.5rem 0rem;
+
+
+    #navbar {
+        padding: 4rem 0rem 0.5rem 0rem;
     }
- 
-  
+
+
 
     ul a {
         margin: 1rem 1rem;
         font-size: 1.2rem;
     }
 
-   .socialtop{
-    position:absolute;
-    top:0;
-    right:1rem;
-   }
+    .socialtop {
+        position: absolute;
+        top: 0;
+        right: 1rem;
+    }
 
 
     .lorem {
