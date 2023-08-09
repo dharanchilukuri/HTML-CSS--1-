@@ -1,0 +1,273 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 1.6rem;
+
+}
+
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: 0.2rem solid #000;
+
+
+}
+
+#nav-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    /* border-style: dashed; */
+
+
+}
+
+ul li {
+    display: inline;
+}
+
+ul a {
+    text-decoration: none;
+    margin: 0 4rem;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #312b2b;
+    letter-spacing: 0.1rem;
+    ;
+
+}
+
+.socialtop {
+    display: flex;
+    align-items: center;
+    margin: 0 1rem;
+
+
+}
+
+
+
+.fa-phone {
+    border-color: black;
+    padding: 1.1rem 0.45rem 1rem 0.3rem;
+}
+
+.fa-cart-shopping {
+    margin-left: 0.7rem;
+}
+
+
+.lorem {
+    position: absolute;
+    left: 6rem;
+    top: 20rem;
+    height: 40vh;
+    width: 60%;
+    background-color: rgba(231, 32, 32, 0.4);
+    max-width: 60rem;
+    color: #fff;
+
+}
+
+.lorem h1 {
+    padding: 4rem 2rem 1rem 4rem;
+    font-size: 5rem;
+}
+
+.lorem p {
+    padding-left: 4rem;
+    max-width: 50rem;
+}
+
+
+
+#home {
+    height: 100vh;
+
+}
+
+
+
+#home,
+#order {
+    background: linear-gradient(285deg, rgb(253, 224, 4) 0%, #f892be 64%);
+
+}
+
+#home img {
+    height: 77vh;
+    width: 100%;
+    object-fit: cover;
+    object-position: center 22%;
+
+}
+
+#order {
+    width: 100%;
+    text-align: center;
+}
+
+#order h2 {
+    padding: 1rem;
+    color: #fff;
+    letter-spacing: 0.2rem;
+    font-size: 4rem;
+}
+
+
+#items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
+    padding-top: 4rem;
+    justify-items: center;
+    margin: 0 10rem 0 10rem;
+
+}
+
+.item {
+    background: #fff;
+    width: 70%;
+    height: 80%;
+    border-top-right-radius: 20%;
+    border-bottom-left-radius: 15%;
+
+
+
+}
+
+.item h5 {
+    padding-top: 1rem;
+    width: 50%;
+    margin: 0 auto;
+    letter-spacing: 0.1rem;
+    font-size: 2rem;
+
+}
+
+.item p {
+    padding-top: 1rem;
+    padding-bottom:3rem;
+    max-width: 23rem;
+    margin: 0 auto;
+}
+
+.item img {
+    height: 70%;
+    width: 100%;
+    object-fit: cover;
+    padding: 2rem 2rem 1rem 2rem;
+    border-top-right-radius: 25%;
+    border-bottom-left-radius: 15%;
+
+
+
+}
+
+#order button {
+    padding: 1.5rem 6rem 1.5rem 6rem;
+    border-radius: 3rem;
+    background: rgb(215, 200, 200);
+    border-width: 0;
+    font-weight: 600;
+    font-size:2rem;
+    margin-bottom: 12rem;
+}
+
+
+
+
+@media only screen and (max-width: 768px) {
+
+   
+ 
+  
+
+    ul a {
+        margin: 1rem 1.5rem;
+        font-size: 2rem;
+    }
+
+    .lorem {
+        top:10rem;
+        left: 1rem;
+        width: 60%;
+        height: 30vh;
+    }
+
+
+
+    .item{
+        padding-bottom:1rem;
+    }
+   
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 570px) {
+    
+   
+
+    #navbar{
+        padding:4rem 0rem 0.5rem 0rem;
+    }
+ 
+  
+
+    ul a {
+        margin: 1rem 1rem;
+        font-size: 1.2rem;
+    }
+
+   .socialtop{
+    position:absolute;
+    top:0;
+    right:1rem;
+   }
+
+
+    .lorem {
+        left: 1rem;
+        width: 60%;
+        height: 30vh;
+    }
+
+    #items {
+        margin: 0;
+
+    }
+
+    .item {
+        height: auto;
+        margin-bottom: 5rem;
+    }
+
+}
