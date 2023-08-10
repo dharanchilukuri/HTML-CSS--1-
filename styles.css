@@ -33,8 +33,6 @@ body {
     align-items: center;
     justify-content: center;
     flex-grow: 1;
-    margin-left: 15rem;
-
 }
 
 ul li {
@@ -43,7 +41,7 @@ ul li {
 
 ul a {
     text-decoration: none;
-    margin: 0 5rem 0 0;
+    margin: 0 1rem 0 4rem;
     font-size: 1.8rem;
     font-weight: 500;
     color: #050505;
@@ -60,7 +58,6 @@ ul a {
 
 
 }
-
 
 
 .fa-phone {
@@ -101,7 +98,6 @@ ul a {
 
 #home {
     height: 100vh;
-
 }
 
 
@@ -109,19 +105,19 @@ ul a {
 #home,
 #order {
     background: linear-gradient(285deg, rgb(253, 224, 4) 0%, #f892be 64%);
+    width: 100%;
 
 }
 
 #home img {
-    height: 77vh;
+    height: 95vh;
     width: 100%;
     object-fit: cover;
-    object-position: center 22%;
+    object-position: center 30%;
 
 }
 
 #order {
-    width: 100%;
     text-align: center;
 }
 
@@ -129,7 +125,7 @@ ul a {
     padding: 1rem;
     color: #fff;
     letter-spacing: 0.2rem;
-    font-size: 4rem;
+    font-size: 4.5rem;
 }
 
 
@@ -144,29 +140,28 @@ ul a {
 
 .item {
     background: #fff;
-    width: 70%;
-    height: 80%;
+    width: 75%;
+    height: 75%;
     border-top-right-radius: 20%;
     border-bottom-left-radius: 15%;
-
-
+    padding-bottom: 1rem;
 
 }
 
+
 .item h5 {
-    padding-top: 1rem;
+    padding-top: 0.5rem;
     width: 50%;
     margin: 0 auto;
     letter-spacing: 0.1rem;
     font-size: 2rem;
-    font-family: Georgia, 'Times New Roman', Times, serif;
 
 }
 
 .item p {
-    padding-top: 1rem;
-    padding-bottom: 3rem;
-    max-width: 23rem;
+    padding: 0.5rem;
+    max-width: 25rem;
+    line-height: 2.3rem;
     margin: 0 auto;
 }
 
@@ -178,9 +173,8 @@ ul a {
     border-top-right-radius: 25%;
     border-bottom-left-radius: 15%;
 
-
-
 }
+
 
 #order button {
     padding: 1.5rem 6rem 1.5rem 6rem;
@@ -195,11 +189,20 @@ ul a {
 
 
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 992px) {
 
 
+    #navbar {
+        padding: 1rem;
+    }
 
-
+    #nav-list {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        justify-content: center;
+        align-items: center;
+        grid-gap: 1rem;
+    }
 
     ul a {
         margin: 1rem 1.5rem;
@@ -214,38 +217,60 @@ ul a {
     }
 
 
-
     .item {
-        padding-bottom: 1rem;
+        width: 60%;
+        padding-bottom: 4rem;
     }
 
+    .itemhgt1 {
+        height: 90%;
+    }
+
+    .itemhgt2 {
+        height: 90%;
+    }
+
+
+    .item h5 {
+        font-size: 1.8rem;
+    }
 
 }
 
 
 
 
-
-
-
-
-
-
-
-
-@media only screen and (max-width: 570px) {
-
-
-
-    #navbar {
-        padding: 4rem 0rem 0.5rem 0rem;
+@media only screen and (max-width: 840px) {
+    #items {
+        margin: 0;
     }
 
+}
 
+
+@media only screen and (max-width: 576px) {
+
+    body {
+        font-size: 1.4rem
+    }
+
+    #navbar {
+        padding-top: 4rem;
+    }
+
+    #nav-list {
+        margin-left: 0;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        justify-content: center;
+        align-items: center;
+        grid-gap: 0.5rem;
+    }
 
     ul a {
-        margin: 1rem 1rem;
-        font-size: 1.2rem;
+        margin: 0 0.5rem;
+        font-size: 1.6rem;
+
     }
 
     .socialtop {
@@ -256,19 +281,75 @@ ul a {
 
 
     .lorem {
+        top: 14rem;
         left: 1rem;
-        width: 60%;
-        height: 30vh;
+        width: 70%;
+        height: 25vh;
     }
 
-    #items {
-        margin: 0;
+    .lorem h1 {
+        padding-left: 2rem;
+        font-size: 2.5rem;
+    }
 
+    .lorem p {
+        padding-left: 2rem;
+        line-height: 2rem;
+    }
+
+    #order h2 {
+        font-size: 3.5rem;
+    }
+
+
+
+    .item {
+        width: 50%;
+        padding-bottom: 4rem;
+    }
+
+    .itemhgt1 {
+        height: 80%;
+    }
+
+    .itemhgt2 {
+        height: 80%;
+    }
+
+    .item h5 {
+        font-size: 1.6rem;
+    }
+
+    #order button {
+        font-size: 1.6rem;
+    }
+
+}
+
+
+@media only screen and (max-width: 420px) {
+
+    #nav-list {
+        grid-template-columns: auto;
+    }
+
+    ul a {
+        font-size: 1.2rem;
+    }
+
+    .lorem {
+        top: 20rem;
+        left: 1rem;
+        width: 80%;
+        height: 35vh;
+    }
+
+    #order h2 {
+        font-size: 2rem;
     }
 
     .item {
-        height: auto;
-        margin-bottom: 5rem;
+        padding-bottom: 6rem;
     }
 
 }
